@@ -1,0 +1,499 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+body{
+  font-size: 16px;
+  font-family: serif;
+  font-style:normal;
+  font-weight: normal;
+  color:black;
+  margin:0;
+  padding:0;
+  border:0;
+}
+ img{
+  width: 100%;
+  display: block;
+} 
+a {
+  text-decoration: none;
+  color:black;
+}
+
+/*****************************header section*********************************/
+
+.menu-box{
+  max-width: 960px;
+  height: 32px;
+  margin: 0 auto;
+  padding: 0 20px;
+ 
+}
+ .menu{
+  display: flex;
+  justify-content:flex-start;
+  margin-top:0px;
+} 
+
+/**********************************************************/
+
+.brand , .brand-text{
+  padding:0  20px ;
+}
+
+
+
+h2 , .brand em {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+em{
+  line-height: 1em;
+  font-size:18px;
+}
+.brand-text{
+  margin:38px 0 58px;
+  position: relative;
+}
+
+h3{
+  background-color: coral;
+  border:solid 1px black;
+  max-width: 768px;
+  max-height: 120px;
+  min-height: 70px;
+  font-size:18px;
+}
+.brand-text picture{
+ max-width:325px;
+ width: 43%;
+ height: auto;
+ position: absolute;
+ right:0px;
+}
+.brand-text article{
+  width: 55%;
+}
+@media (max-width:470px){
+  h3{
+    width: 260px;
+  }
+}
+@media(min-width:471px){
+  h3{
+    padding:10px 30px 10px ;
+  }
+}
+@media(max-width:768px){
+  .brand-text{
+    padding:0 20px;
+  }
+  h3{
+    max-width:500px ;
+  }
+}
+
+article{
+  display: block;
+  max-width: 960px;
+  text-align: center;
+  
+}
+.figure-comment span{
+   font-size: 12px;
+}
+.figure-comment a{
+  color:rgb(0, 89, 255);
+}
+/***ここからfigure-section*****/
+.figure-section ul{
+  padding:0 20px;
+}
+.figure-comment{
+
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.figure-section img{
+  max-width: 640px;
+  height: auto;
+  margin:0 auto;
+}
+.figure-section{
+  position: relative;
+}
+@media(max-width:768px){
+  .box{
+    display: none;
+  }
+}
+.box{
+  background-color: cornsilk;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: calc(50% - 25px);
+  z-index: -1;
+}
+@media(min-width:768px){
+  .figure-section ul{
+    padding:0 20px;
+    max-width:1024px;
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+  }
+  .flex-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  } 
+  .flex-row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+
+
+  }
+  
+   .figure-section img{
+    width: 50%;
+  } 
+  .figure-comment{
+    width: 50%; 
+  }
+}
+@media(min-width:1024px){
+  .figure-comment p{
+    display: block;
+    width: 70%;
+    margin:0 auto;
+    padding:40px 0;
+  }
+  .flex-row{
+    margin-bottom: 50px;
+  }
+  .flex-row-reverse{
+    margin-top:50px;
+  }
+  .box{
+    background-color: cornsilk;
+    height: 172px;
+    width: 100%;
+    position: absolute;
+    top: 420px;
+    z-index: -1;
+  }
+  .figure-section{
+    margin:30px auto;
+  }
+
+}
+/**********************ここかららいんなっぷ**********************/
+
+.line-up{
+  background-color:cornsilk;
+  padding:25px 0 80px 0;
+}
+li{
+  list-style: none;
+}
+.macaron , .brownie{
+  margin-bottom:80px;
+}
+ul{
+  padding:0;
+}
+.line-up-menu{
+  margin:0;
+}
+.line-up-menu li{
+  background-color:cornsilk;
+  position: relative;
+}
+.line-up-menu .box{
+  height:50px;
+  background-color: white;
+  width: calc(100% - 150px);
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -25px);
+  -ms-transform: translate(-50%, -25px);
+  transform: translate(-50%, -25px);
+}
+aside{
+  display: block;
+  text-align: center;
+}
+h6{
+  margin:0;
+}
+h6 > span{
+  color:red;
+}
+.line-up-menu em{
+  font-size: 21px;
+}
+/*********************************お誕生日****************************************/
+.birthday{
+  padding-top:55px;
+}
+.brand-menu span{
+  display:block ;
+  width: 100%;
+  text-align: center; 
+} 
+
+.brand-menu ul{
+  margin-bottom:31px ;
+  padding-bottom:34px;
+}
+
+
+@media (max-width:1023px){ 
+  .brand-menu{
+    padding:0px 20px;
+  }
+  
+  .brand-menu ul li picture{
+    display: block;
+    width: 120px;
+    height: 90px;
+    margin:0;
+  }
+  .brand-menu li{
+   margin-bottom: 15px;
+  }
+  
+  .main-picture{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .main-picture picture img{
+    display: block;
+    width: 120px;
+    height: 90px;
+    margin: 0;
+    border: solid 1px black;
+    border-right-style: none;
+
+  }
+
+  .side{
+    border: solid 1px black;
+    border-left-style: none;
+    height: 90px;
+    width:calc( 100% - 120px);
+    margin: 0;
+    background-color: white;
+  }
+  .brand-menu span{
+    width: 100%;
+    text-align: center;
+    line-height: 90px;
+  } 
+
+  
+  
+
+  
+} 
+
+
+
+/************************************ここからしたのせくしょん****************************/
+.bottom-wrapper span{
+  display: block;
+  line-height: 1em;
+  font-size: 26px;
+  padding:15px 0;
+  width: 100%;
+  text-align: center;
+}
+.bottom-wrapper{
+  padding:40px 20px 25px;
+
+}
+
+
+/******************** ここからふったぁー****************************/ 
+footer{
+  background-color:#fee9c8;
+  margin-top:15px;
+}
+.follow{
+  max-width: 375px;
+  margin:0 auto;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+.follow li {
+  display: block;
+  
+}
+small{
+  display: block;
+  clear: both;
+  padding-bottom:10px;
+  text-align: center;
+}
+.fab{
+  color: gray;
+}
+/************背景**************/
+.menu-color{
+  background-color:cornsilk;
+  padding:10px 0 23px 0 ;
+}
+@media(min-width:1024px){
+  .menu-color{
+    padding-bottom:70px;
+  }
+}
+.birthday{
+  background-color:cornsilk;
+}
+
+/********************れすぽんしぶ****765以下のとき***************/
+@media (max-width:765px){
+  .menu-box{
+    display: none;
+  }
+
+
+}
+
+/********************1024以上の時*****************/
+@media (min-width:1024px){
+
+  /********header*******/
+
+  /********************/
+  h2{
+    line-height: 1em;
+    font-size: 44px;
+    padding-bottom:10px;
+  }
+
+
+
+
+ .title em{
+    line-height: 1em;
+    font-size: 18px;
+  }
+
+  /***ここらへんからブランドメニュー****/
+  .brand , .brand-menu , .brand-text , .bottom-block {
+    max-width: 960px;
+    margin:0 auto;
+    display: block;
+    padding:0;
+  }
+  .side span{
+    display: block;
+    width: calc(100% - 30px);
+    height: 30px;
+    position: absolute;
+    bottom:0;
+    right
+    font-size: 25px;
+  }
+
+  
+
+    ul{
+    display: flex; 
+    justify-content:space-between;
+  }  
+
+  .brand-menu{
+    padding-bottom:30px;
+  }
+  .brand-menu ul li{
+    width: 280px;
+    height: 250px;
+    position: relative;
+   }
+   .main-picture picture{
+     width: 250px;
+     height: 210px;
+     position: absolute;
+   }
+   .side{
+     display: block;
+     width: 250px;
+     height: 210px;
+     position: absolute;
+     right:0;
+     bottom: 0;
+     border: solid 1px black;
+     background-color: white;
+   }
+  .brand-menu ul{
+  height: 250px;
+  margin:0;
+
+}
+
+
+
+
+
+
+
+
+
+
+/***************************line up******************************/
+  .line-up{
+    padding:23px 0 100px 0;
+  }
+  .block{
+    max-width: 1440px;
+    width: 100%;
+    margin:0 auto;
+  }
+  .line-up ul{
+    margin-bottom:0px;
+  }
+  .line-up ul li{
+    margin:0px;
+  }
+  
+  
+  
+  
+  
+  /*********************************************************/
+  .bottom-wrapper{
+    padding: 0;
+  }
+  .bottom-wrapper ul{
+    margin:0;
+    padding-top:20px;
+    padding-bottom:62px
+  }
+  .bottom-block ul li {
+    width: 280px;
+    height: 110px;
+  }
+
+
+
+
+
+
+
+
+
+
+}
