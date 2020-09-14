@@ -1,0 +1,439 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+body{
+  font-size: 16px;
+  font-family: serif;
+  font-style:normal;
+  font-weight: normal;
+  color:black;
+  margin:0;
+  padding:0;
+  border:0;
+}
+ img{
+  width: 100%;
+  display: block;
+} 
+a {
+  text-decoration: none;
+  color:black;
+}
+li{
+  list-style: none;
+}
+
+/*****************************header section*********************************/
+header{
+  position: relative;
+}
+header h1{
+  background-color:rgb(255,134,0, .8);
+  position: absolute;
+  top:0;
+  margin:0;
+  height: 60px;
+  width: 100%;
+}
+header h1 a{
+  margin:10px 20px 0 0;
+  float: right;
+  
+}
+.menu-box{
+  max-width: 960px;
+  height: 32px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+ .menu{
+  display: flex;
+  justify-content:flex-start;
+  margin-top:0px;
+} 
+.menu-box li span{
+  font-size: 12px;
+}
+
+/**********************************************************/
+
+.brand {
+  padding:0  20px ;
+}
+
+.title{
+  height: 65px;
+  margin:22px auto 0;
+  
+}
+
+h2 , .title em {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+em{
+  line-height: 1em;
+  font-size:14px;
+}
+.brand-text{
+  padding: 0 20px;
+  max-width: 960px;
+  text-align: center;
+}
+/*************ナッツ*************/
+.nuts-ul{
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  padding:0 20px;
+  margin:0 auto;
+}
+/* .Sentence{
+  width: 70%;
+} */
+.nuts-ul li .img-box{
+  width: 25%;
+}
+.left{
+  float: left;
+  /* background-color: firebrick; */
+
+}
+.right{
+  float: right;
+  /* background-color: forestgreen; */
+}
+.img-box img{
+  width: 100%;
+}
+
+.flex-left{
+  /* display: flex;
+  flex-direction: row;
+  width: 100%; */
+  /* background-color: deepskyblue; */
+  
+}
+.flex-right{
+  /* display: flex;
+  flex-direction: row-reverse;
+  width: 100%; */
+  text-align: right;
+  /* background-color: cyan; */
+} 
+.Sentence{
+  /* background-color: fuchsia; */
+  width: 80%;
+  margin:0 0 0 auto;
+}
+.Sentence-right{
+  /* background-color:palegoldenrod; */
+  width: 80%;
+
+}
+ .Sentence p, .Sentence-right p{
+  display: block;
+  border: double 1px black;  
+
+} 
+
+.button{
+  display: block;
+  height: 25px;
+  width: 80px;
+  border:solid 1px black;
+  background-color: white;
+  text-align: center;
+  line-height:25px;
+  margin:5px;
+  font-size: 8px;
+} 
+.ul-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 0;
+  justify-content: center;
+}
+
+
+/************************/
+.bottom-block ul{
+
+  margin:15px auto;
+  padding-top:40px;
+}
+.bottom-wrapper{
+  padding: 0;
+  background-color:cornsilk;
+}
+@media(min-width:768px){
+  .bottom-block ul{
+    padding-top:23px;
+  }
+}
+/*******************************/
+.birthday{
+  padding-top:55px;
+  background-color: cornsilk;
+}
+.brand-menu span{
+  display:block ;
+  width: 100%;
+  text-align: center; 
+} 
+
+.brand-menu ul{
+  margin-bottom:31px ;
+  padding-bottom:34px;
+}
+
+
+@media (max-width:1023px){ 
+  .brand-menu{
+    padding:0px 20px;
+  }
+  
+  .brand-menu ul li picture{
+    display: block;
+    width: 120px;
+    height: 90px;
+    margin:0;
+  }
+  .brand-menu li{
+   margin-bottom: 15px;
+  }
+  
+  .main-picture{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .main-picture picture img{
+    display: block;
+    width: 120px;
+    height: 90px;
+    margin: 0;
+    border: solid 1px black;
+    border-right-style: none;
+
+  }
+
+  .side{
+    border: solid 1px black;
+    border-left-style: none;
+    height: 90px;
+    width:calc( 100% - 120px);
+    margin: 0;
+    background-color: white;
+  }
+  .brand-menu span{
+    width: 100%;
+    text-align: center;
+    line-height: 90px;
+  } 
+
+  
+  
+
+  
+} 
+
+/************************************ここからしたのせくしょん****************************/
+.bottom-wrapper span{
+  display: block;
+  line-height: 1em;
+  font-size: 26px;
+  padding:15px 0;
+  width: 100%;
+  text-align: center;
+}
+.bottom-wrapper{
+  padding:0 20px ;
+
+}
+.bottom-block ul{
+  padding-left:0px;
+}
+@media (min-width:1024px){
+  .bottom-wrapper{
+    margin-top:15px ;
+  
+  }
+}
+
+/******************** ここからふったぁー****************************/ 
+footer{
+  background-color:#fee9c8;
+  margin-top:15px;
+}
+.follow{
+  max-width: 375px;
+  margin:0 auto;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+.follow li {
+  display: block;
+  
+}
+small{
+  display: block;
+  clear: both;
+  padding-bottom:10px;
+  text-align: center;
+}
+.fab{
+  color:gray;
+}
+/************背景**************/
+ .menu-color{
+  background-color:cornsilk;
+  padding:10px 0 23px 0 ;
+  margin-bottom:15px;
+  
+}
+
+/********************れすぽんしぶ****765以下のとき***************/
+@media (max-width:765px){
+  .menu-box{
+    display: none;
+  }
+
+
+
+}
+
+/********************1024以上の時*****************/
+@media (min-width:1024px){
+
+  /********header*******/
+  header h1{
+    height: 80px;
+  }
+  header h1 img{
+    margin:0 20px 0 0;
+    float: right;
+    width: 130%;
+    height: auto;
+    
+  }
+  /********************/
+  h2{
+    line-height: 1em;
+    font-size: 44px;
+    padding-bottom:10px;
+  }
+
+
+
+
+ .title em{
+    line-height: 1em;
+    font-size: 18px;
+  }
+
+  /***ここらへんからブランドメニュー****/
+   .brand , .bottom-block {
+    width: 960px;
+    margin:0 auto;
+    display: block;
+  }
+
+  
+
+   ul{
+    display: flex; 
+    justify-content:space-between;
+  } 
+  
+.brand , .brand-menu , .brand-text , .bottom-block {
+    max-width: 960px;
+    margin:0 auto;
+    display: block;
+    padding:0;
+  }
+  .side span{
+    display: block;
+    width: calc(100% - 30px);
+    height: 30px;
+    position: absolute;
+    bottom:0;
+    right
+    font-size: 25px;
+  }
+
+  
+
+    ul{
+    display: flex; 
+    justify-content:space-between;
+  }  
+
+  .brand-menu{
+    padding-bottom:30px;
+  }
+  .brand-menu ul li{
+    width: 280px;
+    height: 250px;
+    position: relative;
+   }
+   .main-picture picture{
+     width: 250px;
+     height: 210px;
+     position: absolute;
+   }
+   .side{
+     display: block;
+     width: 250px;
+     height: 210px;
+     position: absolute;
+     right:0;
+     bottom: 0;
+     border: solid 1px black;
+     background-color: white;
+   }
+  .brand-menu ul{
+  height: 250px;
+  margin:0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /*********************************************************/
+  .bottom-wrapper{
+    padding: 0;
+  }
+  .bottom-wrapper ul{
+    margin:0;
+    padding-top:20px;
+    padding-bottom: 62px;
+  }
+  .bottom-block ul li {
+    width: 280px;
+    height: 110px;
+  }
+
+
+
+
+
+
+
+
+
+}
