@@ -1,0 +1,363 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+body{
+  font-size: 16px;
+  font-family: serif;
+  font-style:normal;
+  font-weight: normal;
+  color:black;
+  margin:0;
+  padding:0;
+  border:0;
+}
+img{
+  width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color:black;
+}
+
+/*******************about our brandここからぶらんどについて *****************/
+section{
+  padding:22px 20px;
+}
+
+h2{
+  height: 63px;
+  margin:0 auto 22px;
+  
+}
+h2 span{
+  line-height: 1em;
+  font-size: 40px;
+  padding-bottom:10px;
+}
+h2 em{
+  line-height: 1em;
+  font-size:12px;
+}
+
+.button{
+  display: block;
+  height: 45px;
+  width: 140px;
+  border:solid 1px black;
+  background-color: white;
+  text-align: center;
+  line-height:43px;
+  margin: 20px auto 0;
+  clear: both;
+} 
+/**********************line up ここかららいんなっぷ**********************/
+.line-up{
+  background-color:cornsilk;
+  padding:30px 0 80px 0;
+}
+li{
+  list-style: none;
+}
+.macaron , .brownie{
+  margin-bottom:80px;
+}
+ul{
+  padding:0;
+}
+.line-up-menu li{
+  background-color:cornsilk;
+  position: relative;
+}
+.line-up-menu .box{
+  height:50px;
+  background-color: white;
+  width: calc(100% - 150px);
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -25px);
+  -ms-transform: translate(-50%, -25px);
+  transform: translate(-50%, -25px);
+}
+aside{
+  display: block;
+  text-align: center;
+}
+h6{
+  margin:0;
+}
+h6 > span{
+  color:red;
+}
+.line-up-menu em{
+  font-size: 21px;
+}
+/* ここから NEWS */
+.news{
+  padding:46px 20px;
+}
+.news ul li{
+  display: block;
+  width: 50%;
+  padding:0 10px;
+  float: left;
+}
+.news ul{
+  margin-bottom:45px;
+}
+/************************************section ここからしたのせくしょん****************************/
+.bottom-wrapper span{
+  display: block;
+  line-height: 1em;
+  font-size: 26px;
+  padding:15px 0;
+  width: 100%;
+  text-align: center;
+}
+.bottom-wrapper{
+  padding:40px 20px 25px;
+  background-color:cornsilk;
+}
+
+
+/********************  footer****************************/ 
+footer{
+  background-color:#fee9c8;
+  margin-top:15px;
+}
+.follow{
+  width: 375px;
+  margin:0 auto;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+.follow li {
+  display: block;
+  
+}
+small{
+  display: block;
+  clear: both;
+  padding-bottom:10px;
+  text-align: center;
+}
+.fab{
+  color:gray;
+}
+
+/********************れすぽんしぶ****1023以下のとき* up to 1023**************/
+@media (max-width:1023px){
+  .brand-text{
+    display: none;
+  }
+  .brand-menu{
+    display: none;
+  }
+  h2, h2 span, h2 em {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/********************1024以上の時　more than 1024*****************/
+@media (min-width:1024px){
+  h2 span{
+    line-height: 1em;
+    font-size: 64px;
+  }
+  h2 em{
+    line-height: 1em;
+    font-size: 18px;
+  }
+  .brand , .brand-menu , .news-block , .bottom-block {
+    width: 960px;
+    margin:0 auto;
+    display: block;
+  }
+  
+  .brand{
+  position: relative;
+  height: 730px;
+  }
+  .brand a{
+  position: absolute;
+  right:0;
+  top:185px;
+}
+  .brand picture{
+    position: absolute;
+    right:-160px;
+    bottom:0px;
+    width: 960px;
+    height: 400px;
+  }
+  article{
+    height: 230px;
+    width: 730px;
+  }
+  article h3{
+    height: 75;
+    font-size: 28;
+    line-height: 35px;
+  }
+  article h3 p{
+    height: 154px;
+    font-size: 18px;
+    line-height: 31px;
+  }
+  .brand h2 span{
+    padding-bottom:0;
+  }
+
+  ul{
+    display: flex; 
+    justify-content:space-between;
+  }
+
+  .brand-menu li{
+    width: 280px;
+    
+    position: relative;
+
+  }
+  .brand-menu picture{
+    z-index: 2px;
+  } 
+  .brand-menu li picture img{
+    width: 250px;
+    position: relative; 
+
+    z-index: 2px;
+  }
+  .color-box{
+  width: 250px;
+  height: 210px;
+  border: solid 1px black;
+  position: absolute;
+  bottom:0px;
+  right:0px;
+  z-index: -10px;
+
+}
+
+  .brand-menu ul{
+  height: 250px;
+  margin:80px 0px 58px 0;
+}
+  .center{
+  width: calc(100% - 30px);
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+  .center span{
+  font-size:25px;
+  line-height: 1em; 
+}
+
+
+
+
+
+
+
+
+/***************************line up******************************/
+  .line-up{
+    padding:23px 0 100px 0;
+  }
+  .block{
+    max-width: 1440px;
+    width: 100%;
+    margin:0 auto;
+  }
+  .line-up ul{
+    margin-bottom:0px;
+  }
+  .line-up ul li{
+    margin:0px;
+  }
+  
+  
+  
+  
+  .news h2 , .line-up h2{
+    height: 75px;
+  }
+  .news h2 span, .line-up h2 span{
+    font-size:50px;
+    line-height: 1em;
+  }  
+  .news h2 span, .news h2 em, .line-up h2 span, .line-up h2 em{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  /****************NEWS**************/
+  .news{
+    padding:38px 0;
+  }
+  .news ul li{
+    display: block;
+    margin:0;
+    padding:0px;
+    width: calc((100% - 120px)/4);
+  }
+
+  .news p{
+    margin :0;
+  }
+  .news-block{
+    position: relative;
+  }
+  .news-button{
+    position: absolute;
+    right: 0;
+    top:0px;
+    border-style: none;
+  }
+  .news ul{
+    margin-bottom:0px;
+    padding-bottom:35;
+  }
+
+  /*********************************************************/
+  .bottom-wrapper{
+    padding: 0;
+  }
+  .bottom-wrapper ul{
+    margin:0;
+    padding-top:20px;
+    padding-bottom:62px
+  }
+  .bottom-block ul li {
+    width: 280px;
+    height: 110px;
+  }
+
+
+/***************/
+  .hover{
+    transition: all 0.6s ease 0s;
+  }
+  .hover:hover{
+    transform: scale(1.1, 1.1);
+  }
+
+
+
+
+
+
+
+
+
+
+
+}
